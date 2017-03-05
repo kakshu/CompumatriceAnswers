@@ -1,0 +1,1 @@
+SELECT Dname as 'DEPTPARTMENT NAME',count(*) as 'NUMBER OF EMPLOYEE' from Department d ,Employee e where d.DeptNo == e.DeptNo group by d.DeptNo 

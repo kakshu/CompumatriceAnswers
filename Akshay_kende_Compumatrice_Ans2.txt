@@ -1,0 +1,16 @@
+//Akshay_kende Compumatrice Answer 2
+
+ public static int countMaxWords(String line)
+    {
+     String [] sentence = line.split( "[.?!]");  //to split long string into sentences
+     int maxcount = 0;
+     for(int i=0;i<sentence.length;i++)          //iterate through each sentence
+     {
+         if((sentence[i].split("\\s+")).length>maxcount)  //spit on white spaces to get word count
+         {
+             maxcount = (sentence[i].split("\\s+")).length;
+         }
+     }
+     return maxcount;                           //return number of words in a sentence which has max words
+    }
+   
